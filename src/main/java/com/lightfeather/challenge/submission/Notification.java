@@ -5,18 +5,20 @@ import javax.validation.constraints.NotBlank;
 
 public class Notification {
 
+	//stating the String firstname cannot be blank
 	@NotBlank(message = "Please enter the first name")
 	private String firstName;
-	
+
+	//stating the String lastName cannot be blank
 	@NotBlank(message = "Please enter the last name")
 	private String lastName;
 	
 	private boolean receiveEmail;
 	private boolean receivePhoneCall;
-	
+
 	@Email(message = "Must be a well-formed email address")
 	private String email;
-	
+
 	@PhoneNumber
 	private String phoneNumber;
 	
